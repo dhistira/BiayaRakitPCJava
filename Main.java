@@ -53,11 +53,6 @@ public class Main extends javax.swing.JFrame {
 
             @Override
             public void windowClosing(WindowEvent we) {
-               int message = JOptionPane.showConfirmDialog(null, "Are you sure you want to exit","Exit Program",JOptionPane.YES_OPTION);
-               
-               if(message == JOptionPane.YES_OPTION){
-                   dispose();
-               }
             }
         }); 
     }
@@ -338,9 +333,9 @@ public class Main extends javax.swing.JFrame {
             StringBuilder sb = new StringBuilder();
             sb.append("\t PC Anda").append("\n\n");
             sb.append("Processor: ").append(SelectedProcessor).append(" - Rp. "+totalHarga().get(0)).append("\n");
-            sb.append("RAM: ").append(SelectedRAM).append(" - Rp. "+formatter.format(totalHarga().get(3))).append("\n");
-            sb.append("VGA: ").append(SelectedVGA).append(" - Rp. "+formatter.format(totalHarga().get(1))).append("\n");
-            sb.append("HDD: ").append(SelectedHDD).append(" - Rp. "+formatter.format(totalHarga().get(2))).append("\n\n");
+            sb.append("RAM: ").append(SelectedRAM).append(" - Rp. "+formatter.format(totalHarga().get(1))).append("\n");
+            sb.append("VGA: ").append(SelectedVGA).append(" - Rp. "+formatter.format(totalHarga().get(2))).append("\n");
+            sb.append("HDD: ").append(SelectedHDD).append(" - Rp. "+formatter.format(totalHarga().get(3))).append("\n\n");
             sb.append("Total Biaya: Rp. ").append(formatter.format(totalBiaya));
 
             ResultArea.setText(sb.toString());
