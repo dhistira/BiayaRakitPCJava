@@ -117,9 +117,9 @@ public class Main extends javax.swing.JFrame {
         jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel2.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
 
-        BuildBtn.setBackground(new java.awt.Color(204, 0, 0));
+        BuildBtn.setBackground(Color.BLACK);
         BuildBtn.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        BuildBtn.setForeground(new java.awt.Color(204, 0, 0));
+        BuildBtn.setForeground(Color.BLACK);
         BuildBtn.setText("Hitung");
         BuildBtn.setName(""); // NOI18N
         BuildBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -265,9 +265,9 @@ public class Main extends javax.swing.JFrame {
         jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel7.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
 
-        ClearBtn.setBackground(new java.awt.Color(204, 0, 0));
+        ClearBtn.setBackground(Color.BLACK);
         ClearBtn.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        ClearBtn.setForeground(new java.awt.Color(204, 0, 0));
+        ClearBtn.setForeground(Color.BLACK);
         ClearBtn.setText("Reset");
         ClearBtn.setName(""); // NOI18N
         ClearBtn.addActionListener(new java.awt.event.ActionListener() {
