@@ -8,10 +8,6 @@
  */
 package rakitpc;
 
-/**
- *
- * @author Aspire
- */
 public class MinException extends Exception{
         
     public MinException(){
