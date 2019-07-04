@@ -28,6 +28,7 @@ import static rakitpc.Hitung.minimumBiaya;
 import static rakitpc.Hitung.totalHarga;
 
 import java.awt.Color;
+import javax.swing.JButton;
 
 public class Main extends javax.swing.JFrame {
     ImageIcon img = new ImageIcon("");
@@ -102,7 +103,7 @@ public class Main extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setIconImage(img.getImage());
 
-        MainPanel.setBackground(Color.LIGHT_GRAY);
+        MainPanel.setBackground(Color.PINK);
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         jLabel1.setText("Biaya Anda");
@@ -159,7 +160,6 @@ public class Main extends javax.swing.JFrame {
 
         PTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Intel Pentium G4600", "1,040,000"},
                 {"Intel i3-8350K", "2,665,000"},
                 {"Intel i5-9600K", "4,675,000"},
                 {"Intel i7-9700K", "7,700,000"},
@@ -332,7 +332,7 @@ public class Main extends javax.swing.JFrame {
 
             StringBuilder sb = new StringBuilder();
             sb.append("\t PC Anda").append("\n\n");
-            sb.append("Processor: ").append(SelectedProcessor).append(" - Rp. "+totalHarga().get(0)).append("\n");
+            sb.append("Processor: ").append(SelectedProcessor).append(" - Rp. "+formatter.format(totalHarga().get(0))).append("\n");
             sb.append("RAM: ").append(SelectedRAM).append(" - Rp. "+formatter.format(totalHarga().get(1))).append("\n");
             sb.append("VGA: ").append(SelectedVGA).append(" - Rp. "+formatter.format(totalHarga().get(2))).append("\n");
             sb.append("HDD: ").append(SelectedHDD).append(" - Rp. "+formatter.format(totalHarga().get(3))).append("\n\n");
@@ -387,5 +387,4 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
-    // End of variables declaration//GEN-END:variables
 }

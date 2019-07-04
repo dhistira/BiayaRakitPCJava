@@ -14,7 +14,7 @@ import java.util.List;
 
 public class Hitung {
 
-    static int[] processorHarga = {1040000, 2665000, 4675000, 7700000, 10175000};
+    static int[] processorHarga = {2665000, 4675000, 7700000, 10175000};
     static int[] RAMHarga = {850000, 987000, 1908000,5625000};
     static int[] VGAHarga = {1595000, 3120000, 4540000};
     static int[] HDDHarga = {704000, 1069000, 1856000, 4980000};
@@ -24,7 +24,7 @@ public class Hitung {
     static int[] VGACapacity = {2000, 3000, 11460};
     static int[] HDDCapacity = {1000, 2000, 4000, 6000};
 
-    static String[] Processors = {"Intel Pentium G4600", "Intel i3-8350K", "Intel i5-9600K", "Intel i7-9700K", "Intel i9-9900K"};
+    static String[] Processors = {"Intel i3-8350K", "Intel i5-9600K", "Intel i7-9700K", "Intel i9-9900K"};
     static String[] RAM = {"CORSAIR 4GB DDR4", "TEAM 2 x 4GB DDR4", "TEAM 2x8GB DDR4", "CORSAIR 2 x 16GB DDR4"};
     static String[] VGA = {"Radeon RX 550 2GB DDR5", "GeForce GTX 1060 3GB DDR5", "Radeon RX 580 4GB DDR5"};
     static String[] HDD = {"SEAGATE Barracuda 1TB", "SEAGATE Barracuda 2TB", "SEAGATE Skyhawk 4TB", "SEAGATE Enterprise CAP SATA 6TB"};
